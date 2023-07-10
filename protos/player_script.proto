@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package guldan;
+
+import "_common.proto";
+
+message OnGiveXPRequest {
+    Context player = 1;
+    uint32 amount = 2;
+    Context victim = 3;
+    uint32 xp_source = 4;
+}
+
+message OnGiveXPResponse {
+    uint32 amount = 1;
+}
+
+service PlayerScript {
+    rpc OnGiveXP(OnGiveXPRequest) returns (OnGiveXPResponse);
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package guldan;
+
+
+message GuldanConnectRequest {
+    string world_conn_str = 1;
+}
+
+message GuldanConnectResponse {}
+
+service Guldan {
+    rpc Connect(GuldanConnectRequest) returns (GuldanConnectResponse);
+}

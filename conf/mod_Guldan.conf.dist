@@ -1,0 +1,4 @@
+[worldserver]
+
+Appender.Guldan=2,5,6,Guldan.log,w
+Logger.guldan=4,Console Guldan

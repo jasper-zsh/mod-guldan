@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package guldan;
+
+message Context {
+    uint64 id = 1;
+}
+
+message EmptyRequest {
+    Context context = 1;
+}
+
+message BoolResponse {
+    bool result = 1;
+}
